@@ -9,6 +9,7 @@
 <body>
 
 	<h1>Bem vindo ao curso JSP</h1>
+	<h4>Pagina do curso JAVA com conexão ao banco de DADOS</h4>
 
 	<form action="ServletsLogin" method="post">
 	<input type="hidden" value="<%= request.getParameter("url")%>" name="url">

@@ -16,6 +16,8 @@ public class ModelLogin implements Serializable {
 	
 	public String getSenha() {
 		return senha;
+		
+		
 	}
 
 	public String getLogin() {
