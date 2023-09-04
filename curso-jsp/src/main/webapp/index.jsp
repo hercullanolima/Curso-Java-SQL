@@ -44,7 +44,7 @@ left:39%;
 		<h4 id="topo">Pagina do curso JAVA com conexão ao banco de DADOS</h4>
 	
 	
-		<form action="<%= request.getContextPath() %>/ServletsLogin" method="post" class="row g-3 needs-validation" novalidate>
+		<form action="<%= request.getContextPath() %>/ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
 		<input type="hidden" value="<%= request.getParameter("url")%>" name="url">
 			
 				 <div class="col-md-6">
@@ -73,16 +73,15 @@ left:39%;
 			
 				<input type="submit" value="Acessar" class="btn btn-primary">
 			
-			
-	
 		</form>
 	
 
-	<h4>${msg}</h4>
+	<h4 class="msg">${msg}</h4>
 
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
  <script type="text/javascript">
  
 	//Validação do campo vazio no form

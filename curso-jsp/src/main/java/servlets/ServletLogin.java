@@ -12,8 +12,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.ModelLogin;
 
 /*O chamado Controller são as servlets*/
-@WebServlet("/ServletsLogin")/*Mapeamento de URL que vem da tela*/
-public class ServletsLogin extends HttpServlet {
+@WebServlet(urlPatterns = {"/principal/ServletLogin", "/ServletLogin"}) /*Mapeamento de URL que vem da tela*/
+public class ServletLogin extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -21,9 +21,7 @@ public class ServletsLogin extends HttpServlet {
 	private DAOLoginRepository daoLoginRepository = new DAOLoginRepository();
 	
       
-    public ServletsLogin() {
-       
-       
+    public ServletLogin() {  
     }
 
 	/*Recebe os dados pela URL em parametros*/
